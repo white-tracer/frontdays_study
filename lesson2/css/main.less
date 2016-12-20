@@ -88,13 +88,55 @@
   &line {
     color: white;
     width: 93%;
-    opacity: 0.8;
+    height: 1px;
+    opacity: 0.4;
     border: none;
     background-color: white;
 
     &_position {
       position: relative;
       top: 8.6%;
+    }
+
+    &-vertical {
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      color: #DA7074;
+      width: 10%;
+      height: 1px;
+      opacity: 0.8;
+      border: none;
+      background-color: #DA7074;
+
+      &_position-1 {
+        position: relative;
+        top: 13%;
+        left: -0.3%;
+      }
+
+      &_position-2 {
+        position: relative;
+        top: 13.2%;
+        left: 0.1%;
+      }
+    }
+
+    &-from-buttons {
+      color: #DA7074;
+      width: 23%;
+      height: 1px;
+      opacity: 0.8;
+      border: none;
+      background-color: #DA7074;
+
+      &_position {
+        position: relative;
+        top: 10.5%;
+        z-index: 1;
+      }
+
     }
   }
 
@@ -106,14 +148,14 @@
     &_position {
       position: relative;
       text-align: center;
-      margin-top: 21%;
+      margin-top: 20%;
     }
   }
 
   &subtitle {
     font-family: 'Open Sans', sans-serif;
     color: white;
-    width: 35%;
+    width: 420px;
     font-size: 16px;
     line-height: 1.5;
 
@@ -122,6 +164,43 @@
       text-align: center;
       margin: 0 auto;
       top: 2%;
+    }
+  }
+
+  &buttons {
+    border-radius: 16px;
+    background-image: url(../button.png);
+    background-size: cover;
+    width: 113px;
+    height: 32px;
+    z-index: 2;
+
+    &:hover {
+      box-shadow: 0 0 20px #000000;
+    }
+
+    &_position{
+      margin: 0 auto;
+      margin-top: 5.9%;
+    }
+  }
+
+  &play-buttons {
+    border-radius: 50px;
+    margin: 0 auto;
+    background-image: url(../icons.png);
+    background-position: 89%;
+    width: 73px;
+    height: 73px;
+
+    &:hover {
+      box-shadow: 0 0 20px #000000;
+    }
+
+    &_position {
+      position: relative;
+      margin-top: 15%;
+
     }
   }
 
