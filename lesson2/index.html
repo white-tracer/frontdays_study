@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1100px">
+    <!--<meta name="viewport" content="device"> -->
     <meta name="description" content="Домашка к занятию 2. Верстка макета 2. Made by Sergey L">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Merienda:400,700|Open+Sans:400,400i,700,700i|Questrial" rel="stylesheet">
     <title>Web Design - Макет 2</title>
 
 </head>
 <body>
 
-<div class="container">
+<div class="container container__main_size">
     <div class="main__container">
-        <div class="main__menu"></div>
-        <div class="main__title"></div>
+        <nav class="main__menu main__menu_position">
+            <a href="/"><div class="main__menu-item main__menu-item_logo"></div></a>
+            <a class="main__menu-link main__menu-link_first-link" href="/">HOME</a>
+            <a class="main__menu-link main__menu-link_second-link" href="/">ABOUT</a>
+            <a class="main__menu-link main__menu-link_third-link" href="/">CONTACT</a>
+            <a href="/"><div class="main__menu-item main__menu-item_search"></div></a>
+            <a href="/"><div class="main__menu-item main__menu-item_hamburger"></div></a>
+        </nav>
+        <hr noshade class="main__line main__line_position">
+        <h1 class="main__title main__title_position">Web Design</h1>
+        <p class="main__subtitle main__subtitle_position">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum, ut fermentum massa justo sit amet<br>erat a ante venenatis dapibus posuere velit</p>
         <div class="main__buttons"></div>
     </div>
 </div>
